@@ -1,3 +1,4 @@
 tasks:
    - name: Installing Ionic 5 & Cordova     
-     command: npm install -g @ionic/cli cordova && cd Breaking-Bad-Fandom
+     command: npm install -g @ionic/cli cordova
+     command: ionic start "Breaking-Bad-Fandom" blank --type=angular && cd Breaking-Bad-Fandom
