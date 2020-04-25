@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
+import { ApiService} from '../../services/api.service';
 
 @Component({
   selector: 'app-episodes',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EpisodesPage implements OnInit {
 
-  constructor() { }
+    episodes: Observable<any>;
+
+  constructor(private router: Router, private api: ApiService) { }
 
   ngOnInit() {
+      this.episodes = this.api.getEpisodes();
   }
 
 }
