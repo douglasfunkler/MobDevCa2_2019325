@@ -21,7 +21,7 @@ export class ApiService {
         return this.http.get(`http://www.breakingbadapi.com/api/characters/${id}`);
     }
     getQuotes() {
-        return this.http.get('http://www.breakingbadapi.com/api/quotes')
+        return this.http.get('http://www.breakingbadapi.com/api/quotes/')
     }
     getQuote(id) {
         return this.http.get(`http://www.breakingbadapi.com/api/quotes/${id}`);
