@@ -1,5 +1,7 @@
 {
   "name": "Breaking-Bad-Fandom",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
