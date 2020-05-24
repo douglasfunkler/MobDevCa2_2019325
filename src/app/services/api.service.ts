@@ -9,24 +9,33 @@ export class ApiService {
     constructor(private http: HttpClient) { }
 
     getEpisodes() {
-        return this.http.get(`https://enigmatic-dusk-77224.herokuapp.com/episodes`)
+        return this.http.get('https://calm-anchorage-69948.herokuapp.com/episodes')
     }
+
     getEpisode(id) {
-        return this.http.get(`https://enigmatic-dusk-77224.herokuapp.com/${id}`);
+        return this.http.get('https://calm-anchorage-69948.herokuapp.com/episodes/${id}');
     }
+
     getCharacters() {
-        return this.http.get('https://enigmatic-dusk-77224.herokuapp.com/characters')
-    } 
+        return this.http.get('https://calm-anchorage-69948.herokuapp.com/characters')
+    }
+
     getCharacter(id) {
-        return this.http.get(`https://enigmatic-dusk-77224.herokuapp.com/characters/${id}`);
+        return this.http.get('https://calm-anchorage-69948.herokuapp.com/characters/${id}');
     }
     getQuotes() {
-        return this.http.get('https://enigmatic-dusk-77224.herokuapp.com/quotes/')
+        return this.http.get('https://calm-anchorage-69948.herokuapp.com/quotes')
     }
+
     getQuote(id) {
-        return this.http.get(`https://enigmatic-dusk-77224.herokuapp.com/quotes/${id}`);
+        return this.http.get('https://calm-anchorage-69948.herokuapp.com/quotes/${id}');
     }
+
     getDeaths() {
-        return this.http.get(`https://enigmatic-dusk-77224.herokuapp.com/deaths`)
+        return this.http.get('https://calm-anchorage-69948.herokuapp.com/deaths')
+    }
+
+    getDeath(id) {
+        return this.http.get('https://calm-anchorage-69948.herokuapp.com/deaths/${id}')
     }
 }
