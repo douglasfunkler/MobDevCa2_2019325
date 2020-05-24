@@ -15,21 +15,21 @@ export class ApiService {
         return this.http.get(`https://fast-lake-65213.herokuapp.com/episodes`)
     }
     getEpisode(id) {
-        return this.http.get(`http://www.breakingbadapi.com/api/episodes/${id}`);
+        return this.http.get(`https://fast-lake-65213.herokuapp.com/episodes/${id}`);
     }
     getCharacters() {
-        return this.http.get('http://www.breakingbadapi.com/api/characters')
+        return this.http.get('https://fast-lake-65213.herokuapp.com/characters')
     } 
     getCharacter(id) {
-        return this.http.get(`http://www.breakingbadapi.com/api/characters/${id}`);
+        return this.http.get(`https://fast-lake-65213.herokuapp.com/characters/${id}`);
     }
     getQuotes() {
-        return this.http.get('http://www.breakingbadapi.com/api/quotes/')
+        return this.http.get('https://fast-lake-65213.herokuapp.com/quotes/')
     }
     getQuote(id) {
-        return this.http.get(`http://www.breakingbadapi.com/api/quotes/${id}`);
+        return this.http.get(`https://fast-lake-65213.herokuapp.com/quotes/${id}`);
     }
     getDeaths() {
-        return this.http.get(`http://www.breakingbadapi.com/api/deaths`)
+        return this.http.get(`https://fast-lake-65213.herokuapp.com/deaths`)
     }
 }
