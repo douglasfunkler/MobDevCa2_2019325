@@ -8,9 +8,6 @@ export class ApiService {
 
     constructor(private http: HttpClient) { }
 
-    // getEpisodes() {
-    //     return this.http.get(`http://www.breakingbadapi.com/api/episodes`)
-    // }
     getEpisodes() {
         return this.http.get(`https://fast-lake-65213.herokuapp.com/episodes`)
     }
